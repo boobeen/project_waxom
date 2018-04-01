@@ -375,7 +375,6 @@ input {
 }
 
 .purchase {
-	/*width: 1920px;*/
 	height: 150px;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -511,7 +510,9 @@ span :first-child {
 	position: relative;
 }
 
-.link {
+.link,
+.lupa {
+	fill: #fff;
 	visibility: hidden;
 	position: absolute;
 	top: 106px;
@@ -519,9 +520,6 @@ span :first-child {
 }
 
 .lupa {
-	visibility: hidden;
-	position: absolute;
-	top: 106px;
 	left: 198px;
 }
 
@@ -562,6 +560,10 @@ figcaption p {
 	text-transform: capitalize;
 }
 
+.review_item:hover img {
+	filter: brightness(50%);
+}
+
 .review_item:hover figcaption {
 	background-color: #362f2d;
 }
@@ -582,3 +584,26 @@ figcaption p {
 .review_item:hover .lupa {
 	visibility: visible;
 }
+
+.link:hover,
+.lupa:hover {
+	fill: #c8b49a;
+}
+
+.review button {
+	display: block;
+	min-width: 170px;
+	background-color: #998675;
+	border: none;
+	border-radius: 3px;
+	margin: 35px 100px;
+	padding: 3px;
+	font-family: raleway-extrabold;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+	
