@@ -415,7 +415,7 @@ span :first-child {
 	color: #615855;
 	font-size: 18px;
 	text-align: left;
-	padding: 8px 0;
+	padding: 10px 0;
 }
 
 
@@ -432,4 +432,153 @@ span :first-child {
 	font-size: 14px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.review {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 200px;
+
+}
+
+.review_head {
+	width: 100%;
+}
+
+.review_head span {
+	display: block;
+	margin: 80px 0 0 0;
+	font-family: raleway-semibold;
+	color: #555555;
+	font-size: 30px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.review_head p {
+	width: 770px;
+	margin: 25px auto 40px;
+	font-family: montserrat-light;
+	color: #8c8c8c;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.review_menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 40px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.review_menu li:hover a {
+	background-color: #998675;
+	color: #fff;
+	
+}
+.review_menu a {
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+	box-sizing: border-box;
+	margin: 0 5px;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-family: montserrat-light;
+	color: #8c8c8c;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.review_item {
+	margin: 15px;
+	position: relative;
+}
+
+.link {
+	visibility: hidden;
+	position: absolute;
+	top: 106px;
+	left: 144px;
+}
+
+.lupa {
+	visibility: hidden;
+	position: absolute;
+	top: 106px;
+	left: 198px;
+}
+
+.review figcaption {
+	height: 100px;
+	background-color: #fbfaf8;
+	margin: -4px 0 0 0;
+	position: relative;
+}
+
+.review figcaption:before {
+	content: "";
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 10px solid #fbfaf8;
+	position: absolute;
+	top: -10px;
+	left: 20px;
+}
+
+figcaption span {
+	margin: 0 0 0 30px;
+	font-family: raleway-medium;
+	color: #c7b29a;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+figcaption p {
+	margin: 0 0 0 30px;
+	font-family: montserrat-light;
+	color: #d1d1d1;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+.review_item:hover figcaption {
+	background-color: #362f2d;
+}
+
+.review_item:hover figcaption:before {
+	border-bottom-color: #362f2d;
+}
+
+.review_item:hover span {
+	color: #fff;
+}
+
+.review_item:hover p {
+	color: #c7b299;
+}
+
+.review_item:hover .link,
+.review_item:hover .lupa {
+	visibility: visible;
 }
