@@ -236,23 +236,18 @@ p {
 
 .started {
 	display: block;
+	min-width: 170px;
+	background-color: #998675;
 	border: none;
 	border-radius: 3px;
-	background-color: #998675;
-	width: 170px;
 	margin: 52px auto 0;
-	padding: 13px;
+	padding: 3px;
 	font-family: raleway-extrabold;
 	color: #ffffff;
 	font-size: 14px;
-	line-height: 23px;
+	line-height: 53px;
 	text-align: center;
 	text-transform: uppercase;
-}
-
-.pagi {
-	width: 100px;
-	margin: 0 auto;
 }
 
 .pagi {
@@ -262,8 +257,9 @@ p {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
+	width: 100px;
+	margin: 330px auto 0;
 	padding: 0;
-	margin-top: 330px;
 }
 
 input {
@@ -287,10 +283,11 @@ input {
 	padding: 0 17px;
 	text-decoration: none;
 	text-align: center;
+	position: relative;
 }
 
-.part:hover {
-	color: #c7b299;
+.part svg {
+	fill: #555555;
 }
 
 .part_title {
@@ -299,6 +296,7 @@ input {
 	font-size: 22px;
 	text-align: center;
 	text-transform: capitalize;
+	padding: 30px 0 20px 0;
 }
 
 .part p {
@@ -307,6 +305,29 @@ input {
 	font-size: 14px;
 	line-height: 24px;
 	text-align: center;
+}
+
+.part:after {
+	content: "";
+	width: 70px;
+	height: 3px;
+	background-color: #f1eee9;
+	position: absolute;
+	top: 206px;
+	left: 117px;
+}
+
+.part:hover svg {
+	fill: #c7b299;
+}
+
+.part:hover .part_title {
+	color: #c7b299;
+}
+
+
+.part:hover:after {
+	background-color: #c7b299;
 }
 
 .screenshots {
@@ -351,4 +372,64 @@ input {
 	position: absolute;
 	top: 300px;
 	left: 806px;
+}
+
+.purchase {
+	/*width: 1920px;*/
+	height: 150px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+	padding: 0 375px;
+}
+
+.purchase div {
+	margin: auto 0;
+}
+
+.purchase span {
+	font-family: raleway-regular;
+	color: #ffffff;
+	font-size: 28px;
+	text-align: left;
+}
+
+span :first-child {
+	font-family: raleway-regular;
+	color: #c7b299;
+	font-size: 28px;
+	text-align: left;
+}
+
+
+.purchase p {
+	font-family: montserrat-light;
+	color: #615855;
+	font-size: 18px;
+	text-align: left;
+	padding: 8px 0;
+}
+
+
+.purchase button{
+	display: block;
+	min-width: 170px;
+	background-color: #998675;
+	border: none;
+	border-radius: 3px;
+	margin: 50px 0;
+	padding: 3px;
+	font-family: raleway-extrabold;
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
 }
