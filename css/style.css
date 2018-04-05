@@ -606,4 +606,68 @@ figcaption p {
 	text-transform: uppercase;
 }
 
+.video {
+	width: 1920px;
+	height: 705px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background-image: url(../images/photo_vid.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.video__item {
+	width: 570px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.video__item__icon {
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	text-align: center;
+}
+
+.video__play {
+	fill: #ffffff;
+
+}
+
+.video__item__title {
+	font-family: raleway-medium;
+	color: #ffffff;
+	font-size: 30px;
+	text-align: center;
+	text-transform: capitalize;
+}
 	
+.video__item__text {
+	font-family: montserrat-light;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.video__item__time {
+	font-family: montserrat-regular;
+	color: #c7b299;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
