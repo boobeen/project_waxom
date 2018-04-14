@@ -79,6 +79,7 @@
          url('../fonts/montserrat/montserrat-regular.woff') format('woff'),
          url('../fonts/montserrat/montserrat-regular.svg#montserratregular') format('svg');
 }
+/*==============================================================================*/
 
 .container {
 	width: 1920px;
@@ -621,7 +622,7 @@ figcaption p {
 
 .video__item {
 	width: 570px;
-	margin: auto;
+	margin: 0 auto;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -632,6 +633,8 @@ figcaption p {
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
+	justify-content: flex-start;
+	text-align: center;
 }
 
 .video__item__icon {
@@ -639,21 +642,21 @@ figcaption p {
 	background-color: rgba(0, 0, 0, 0.2);
 	width: 100px;
 	height: 100px;
-	margin: auto;
-	text-align: center;
+	margin: 210px auto 0;
+	
 }
 
 .video__play {
 	fill: #ffffff;
-
+	padding: 15px 0 0 0;
 }
 
 .video__item__title {
 	font-family: raleway-medium;
 	color: #ffffff;
 	font-size: 30px;
-	text-align: center;
 	text-transform: capitalize;
+	margin: 43px auto 16px;
 }
 	
 .video__item__text {
@@ -661,7 +664,6 @@ figcaption p {
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 28px;
-	text-align: center;
 }
 
 .video__item__time {
@@ -669,5 +671,141 @@ figcaption p {
 	color: #c7b299;
 	font-size: 14px;
 	line-height: 24px;
+	margin: 30px 0 0 0;
+}
+
+.mobile {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+}
+
+.mobile__photo {
+	min-width: 44%;
+	height: 695px;	
+	background-color: #fbfaf8;
+	background: url(../images/iphone_in_hand.png) no-repeat;
+	background-position: right bottom;
+}
+
+.mobile__item {
+	width: 665px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 0 30px;
+}
+
+.mobile__item__title {
+	font-family: raleway-semibold;
+	color: #555555;
+	font-size: 30px;
+	text-align: left;
+	text-transform: capitalize;
+	margin: 0 0 40px 0;
+}
+
+.mobile__item p {
+	font-family: montserrat-light;
+	color: #8c8c8c;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+	margin: 0 0 45px 0;
+}
+
+.mobile__item__list {
+	font-family: montserrat-light;
+	color: #8c8c8c;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: left;
+	list-style-type: none;
+	margin: 0 0 0 55px;
+}
+
+.mobile__item__list li {
+	position: relative;
+}
+
+.mobile__item__list li:before {
+	content: url(../icons/mark.svg);
+	position: absolute;
+	top: 5px;
+	left: -50px;
+}
+
+.counters {
+	/*width: 1920px;*/
+	height: 300px;
+	background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+	background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.counter__item {
+	width: 150px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
+	margin: 0 30px;
+	position: relative;
+}
+
+.counter__item svg {
+	fill: #c7b299;
+	margin: 0 auto;
+}
+
+.counter__count {
+	font-family: montserrat-extralight;
+	color: #ffffff;
+	font-size: 48px;
+	line-height: 36px;
+	margin: 30px 0 20px;
+}
+
+.counter__title {
+	font-family: montserrat-light;
+	color: #c7b299;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.counter__item:after {
+	content: " ";
+	width: 28px;
+	border: 1px solid #ffffff;
+	position: absolute;
+	top: 240px;
+	left: 40%;
 }
