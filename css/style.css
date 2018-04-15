@@ -831,11 +831,12 @@ figcaption p {
 	font-size: 30px;
 	text-transform: capitalize;
 	text-align: center;
+	margin: 80px 0 30px 0;
 }
 
 .recent__text {
 	/*width: 760px;*/
-	margin: 0 575px;
+	margin: 0 575px 40px;
 	font-family: montserrat-light;
 	color: #8c8c8c;
 	font-size: 16px;
@@ -845,7 +846,13 @@ figcaption p {
 
 .recent__item {
 	width: 370px;
-	margin: 0 15px; 
+	height: 395px;
+	margin: 0 15px;
+	border: 1px solid #f8f8f8;
+}
+
+.recent__item__photo{
+	margin: 0;
 }
 
 .resent__item__title {
@@ -857,12 +864,30 @@ figcaption p {
 }
 
 .resent__item__text {
-	width: 100%;
 	font-family: montserrat-light;
 	color: #8c8c8c;
 	font-size: 14px;
 	line-height: 22px;
 	text-align: left;
 	text-transform: none;
+	margin: 0 0 27px 30px;
 }
 
+.resent__item__more {
+	font-family: montserrat-light;
+	color: #c7b299;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.resent__item__more:after {
+	content: "";
+	border-left: 5px solid #c7b299;
+	border-top: 5px solid transparent;
+	border-bottom:5px solid transparent;
+	position: absolute;
+	top: 2px;
+	left: 85px; 
+}
