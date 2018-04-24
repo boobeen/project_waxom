@@ -154,6 +154,10 @@ input[type="checkbox"]:checked ~ .menu {
 	visibility: visible;
 }
 
+input[type="checkbox"]:checked ~ label {
+	background-image: url(../icons/cross.svg);
+}
+
 .menu {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1262,6 +1266,8 @@ input {
 		-o-flex-direction: column;
 		flex-direction: column;
 		margin: 24px 0 0 -224px;
+		position: relative;
+		z-index: 10;
 	}
 
 	.menu li {
