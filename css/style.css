@@ -118,7 +118,6 @@
 	align-items: center;
 	margin: 0 auto;
 	padding: 40px 0 0 375px;
-
 }
 
 .logo {
@@ -152,10 +151,6 @@ label {
 
 input[type="checkbox"]:checked ~ .menu {
 	visibility: visible;
-}
-
-input[type="checkbox"]:checked ~ label {
-	background-image: url(../icons/cross.svg);
 }
 
 .menu {
@@ -200,10 +195,6 @@ input[type="checkbox"]:checked ~ label {
 	margin: 0 0 0 28px !important;
 	background-image: url(../icons/search.png);
 	background-repeat: no-repeat;
-}
-
-.slider {
-
 }
 
 .maintext {
@@ -1285,6 +1276,7 @@ input {
 	.menu a {
 		display: block;
 		width: 100%;
+		font-size: 20px;
 		line-height: 40px;
 		text-align: center;	
 	}
@@ -1332,10 +1324,6 @@ input {
 
 	.screenshots,
 	.purchase {
-		display: none;
-	}
-
-	 {
 		display: none;
 	}
 
