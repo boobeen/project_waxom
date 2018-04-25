@@ -118,7 +118,6 @@
 	align-items: center;
 	margin: 0 auto;
 	padding: 40px 0 0 375px;
-
 }
 
 .logo {
@@ -196,10 +195,6 @@ input[type="checkbox"]:checked ~ .menu {
 	margin: 0 0 0 28px !important;
 	background-image: url(../icons/search.png);
 	background-repeat: no-repeat;
-}
-
-.slider {
-
 }
 
 .maintext {
@@ -1262,6 +1257,8 @@ input {
 		-o-flex-direction: column;
 		flex-direction: column;
 		margin: 24px 0 0 -224px;
+		position: relative;
+		z-index: 10;
 	}
 
 	.menu li {
@@ -1279,6 +1276,7 @@ input {
 	.menu a {
 		display: block;
 		width: 100%;
+		font-size: 20px;
 		line-height: 40px;
 		text-align: center;	
 	}
@@ -1326,10 +1324,6 @@ input {
 
 	.screenshots,
 	.purchase {
-		display: none;
-	}
-
-	 {
 		display: none;
 	}
 
